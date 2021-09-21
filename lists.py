@@ -30,6 +30,6 @@ print(list)
 list.append('word3')
 print(list)
 
-#elementa izdešana
+#pop-elementa noņemšana
 list.pop(2)
 print(list)
