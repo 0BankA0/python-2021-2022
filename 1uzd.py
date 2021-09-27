@@ -1,11 +1,12 @@
 #pirmais punktu bloks
 
-aaa=("b" + "b")
-aaa=('b', 'b')
+aaa="b" + "b"
+
 
 print(aaa)
 
-aaa='bbbbb'
+aaa='b', 'b'
+
 print(aaa)
 
 #otrais punktu bloks
