@@ -1,6 +1,7 @@
 #pirmais punktu bloks
 
-aaa=("bbbbb")
+aaa=("b" + "b")
+aaa=('b', 'b')
 
 print(aaa)
 
