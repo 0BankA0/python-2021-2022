@@ -5,9 +5,9 @@ aaa="b" + "b"
 
 print(aaa)
 
-aaa='b', 'b'
+aaaa='b', 'b'
 
-print(aaa)
+print(aaaa)
 
 #otrais punktu bloks
 aaa= "453554452"
