@@ -24,6 +24,11 @@ data = ['Tom', 'Jim', 'David']
 for data in data:
     print('name in database', data)
 
-for data in range('Tom','Jim','David'):
+'''
+for data in range():
     print(data)
+
+nesaprotams kā strada range()
+
+'''
 
