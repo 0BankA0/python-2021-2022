@@ -8,3 +8,4 @@ b =cena["cukurs"]
 c = a * b
 
 print(str(c))
+12312312312312312312312
