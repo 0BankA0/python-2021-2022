@@ -1,0 +1,21 @@
+{
+    "Vards": "Boris",
+    "Vecums": 30,
+    "Dzivs": true,
+    "NeDzivs": false,
+    "Berni": [
+        "Gatis",
+        "Anna"
+    ],
+    "Dzivnieki": null,
+    "Masinas": [
+        {
+            "Modelis": "BMW M8",
+            "Gads": 2020
+        },
+        {
+            "Modelis": "Audi RS6 C8",
+            "Gads": 2020
+        }
+    ]
+}
