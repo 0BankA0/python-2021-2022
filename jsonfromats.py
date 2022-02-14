@@ -73,5 +73,5 @@ with open("pirmais_json.json", "r") as fails:
 
 
 #Nodefinet funkciju, kura kā argumentus izmatos
-#  datnes nosaukumu un atslēgas nosaukumu
-# jaizvada atslegas vērtiba            
+# datnes nosaukumu un atslēgas nosaukumu
+# jaizvada atslegas vērtiba
