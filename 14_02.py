@@ -1,4 +1,5 @@
 import csv
+import json
 def csv_1_2(pirmaiscsv, otraiscsv):
     with open(pirmaiscsv, 'r',encoding="utf-8") as fails:
         lasit_csv = csv.reader(fails)
@@ -33,3 +34,7 @@ def csv_1_2(pirmaiscsv, otraiscsv):
     print(vienadi)
 
 csv_1_2("pirmais.csv","otrais.csv")
+
+def json_kopa(pirmaisJSON, otraisJSON):
+    with open("pirmais_json.json", "r") as fails:
+        json_dati = json.load(fails)
