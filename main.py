@@ -1,11 +1,17 @@
-recepte = {"cukurs": 0.6, "kanelis": 0.008, "aboli":2.0, "udeni":0.2  }
-cena = {"cukurs":0.75, "kanelis":0.3, "aboli":0.0, "udeni":0.0}
+import json
+
+data=[]
+
+def arr():
+    x=0
+    while x<1:
+        print(x)
+        x-=1
+        X.append(x)
+        data.update(x)
+        with open('x.txt','w')as outfile:
+            json.dump(data,outfile)
 
 
-a =recepte["cukurs"]
-b =cena["cukurs"]
-
-c = a * b
-
-print(str(c))
-123123123123123123123121231231123123
+arr()
+print(X)
