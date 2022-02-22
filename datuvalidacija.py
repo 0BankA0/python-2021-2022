@@ -1,10 +1,9 @@
 while True:
         tell = input("Ievadi savu telefona numuru: ")
-        if tell.isdigit() = True
-        elif len(tell) <8:
+        if len(tell) <8:
             continue
         else:
-            break
+             break
 
 
 
@@ -25,4 +24,3 @@ while True:
     else:
         break
 
-print(vards)
