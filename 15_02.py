@@ -1,8 +1,38 @@
 import json
-vards = input('ievadiet vardu: ')
-uzvards = input('ievadiet uzvardu: ')
-vecums = input('ievadiet vecumu: ')
-tell = input('ievadiet telefona numuru: ')
+
+while True:
+        tell = input("Ievadi savu telefona numuru: ")
+        if len(tell) <8:
+            continue
+        else:
+             break
+
+
+
+while True:
+    vecums = input("Ievadi savu vecumu: ")
+    if vecums.isdigit() == True:
+        break
+    else:
+        continue
+
+
+
+while True:
+    vards = input("Ievadi savu vardu: ")
+    if vards.strip() == "":
+        print("ievadi vardu atkartoti: ")
+        continue
+    else:
+        break
+
+while True:
+    uzvards = input("Ievadi savu vardu: ")
+    if uzvards.strip() == "":
+        print("ievadi vardu atkartoti: ")
+        continue
+    else:
+        break
 
 ievad_dati = {
     "Uzvārds":uzvards,
