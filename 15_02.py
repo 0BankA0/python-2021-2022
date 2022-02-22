@@ -1,19 +1,30 @@
 import json
-vardss = input('ievadiet vardu: ')
-uzvardss = input('ievadiet uzvardu: ')
-vecumss = input('ievadiet vecumu: ')
+vards = input('ievadiet vardu: ')
+uzvards = input('ievadiet uzvardu: ')
+vecums = input('ievadiet vecumu: ')
 tell = input('ievadiet telefona numuru: ')
 
-vardnica = {
-    'Vards':vardss,
-    'Uzvards':uzvardss,
-    'Vecums':vecumss,
-    'Telefona Numurs':tell
+ievad_dati = {
+    "Uzvārds":uzvards,
+    "Vecums":vecums,
+    "Telefona numurs":tell
 }
 
-def dati(vards,uzvards,vecums,tel):
-    with open('ievaktieDati.json','a',encoding='utf-8') as outfile:
-        
-        json.dump(vardnica,outfile,indent=4,ensure_ascii=False)
+with open("ievaktieDati.json","r", encoding="utf-8") as fails:
+    json_data = json.load(fails)
 
-dati(vardss,uzvardss,vecumss,tell)
+    ir_saraksta =False
+    for key in json_data.keys():
+        if key == vards:
+            break
+        if key != vards:
+            ir_saraksta = True
+
+    if ir_saraksta == False:
+        print("Vārds ir sarakstā")
+    else:
+        json_data[vards]=ievad_dati
+
+with open("ievaktieDati.json","w", encoding="utf-8") as fails:
+    json.dump(json_data,fails, indent = 4, ensure_ascii=False)
+
