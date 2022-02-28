@@ -44,27 +44,28 @@ while True:
         print('ievadiet telefona numuru atkartoti')
         continue
 
-ievad_dati = {
-    "Uzvārds":uzvards,
-    "Vecums":vecums,
+vardnica = {
+    "Uzvārds":uzvardss,
+    "Vecums":vecumss,
     "Telefona numurs":tell
 }
 
 with open("ievaktieDati.json","r", encoding="utf-8") as fails:
     json_data = json.load(fails)
 
-    ir_saraksta =False
+    ir_saraksta = True
     for key in json_data.keys():
-        if key == vards:
+        if key == vardss:
             break
-        if key != vards:
-            ir_saraksta = True
+        if key != vardss:
+            print(key)
+            ir_saraksta == False
 
-    if ir_saraksta == False:
-        print("Vārds ir sarakstā")
+    if ir_saraksta == True:
+        print('Vards ir saraksta')
     else:
-        json_data[vards]=ievad_dati
+        json_data[vardss]=vardnica
+
 
 with open("ievaktieDati.json","w", encoding="utf-8") as fails:
     json.dump(json_data,fails, indent = 4, ensure_ascii=False)
-
