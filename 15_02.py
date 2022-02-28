@@ -1,38 +1,48 @@
 import json
 
 while True:
-        tell = input("Ievadi savu telefona numuru: ")
-        if len(tell) <8:
+    vardss = input('ievadiet vardu: ')
+    if vardss.isdigit() == False:
+        if vardss.strip() == '':
+            print('ievadiet vardu atkartoti')
             continue
         else:
-             break
+            break
+    else:
+        print('ievadiet vardu atkartoti')
+        continue
 
-
+        
 
 while True:
-    vecums = input("Ievadi savu vecumu: ")
-    if vecums.isdigit() == True:
-        break
+    uzvardss = input('ievadiet uzvardu: ')
+    if uzvardss.isdigit() == False:
+        if uzvardss.strip() == '':
+            print('ievadiet uzvardu atkartoti')
+            continue
+        else:
+            break
     else:
+        print('ievadiet uzvardu atkartoti')
         continue
 
 
+while True:
+    vecumss = input('ievadiet vecumu: ')
+    if vecumss.isdigit():
+        break
+    else:
+        print('ievadiet vecumu atkartoti')
+        continue
 
 while True:
-    vards = input("Ievadi savu vardu: ")
-    if vards.strip() == "":
-        print("ievadi vardu atkartoti: ")
-        continue
+    tell = input('ievadiet telefona numuru: ')
+    if tell.isdigit():
+        if len(tell) == 8:
+            break
     else:
-        break
-
-while True:
-    uzvards = input("Ievadi savu vardu: ")
-    if uzvards.strip() == "":
-        print("ievadi vardu atkartoti: ")
+        print('ievadiet telefona numuru atkartoti')
         continue
-    else:
-        break
 
 ievad_dati = {
     "Uzvārds":uzvards,
