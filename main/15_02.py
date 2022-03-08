@@ -86,4 +86,16 @@ with open("ievaktieDati.json","w", encoding="utf-8") as fails:
 
 while True:
     print("/Izvelies darbību:")
-    print("1 - :")
+    print("1 - kontakta pievienošan :")
+    print("2 - kontakta meklešana :")
+    print("3 - iziet :")
+    izvelne = input
+
+    if izvelne == "1":
+        kont_piev()
+    elif izvelne == "2":
+        print(kont_mekl())
+    elif int(izvelne) == "3":
+        exit()
+    else:
+        print("/Izvelies kadu no darbibam")
