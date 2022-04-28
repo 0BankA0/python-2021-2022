@@ -11,7 +11,7 @@ db.execute("""CREATE TABLE IF NOT EXISTS noliktava1
     )""")
 
 
-
+sakums = True
 def datuievade():
     while True:
         produkcijas_veids = input('Kas tiek ievests noliktava: ')
@@ -41,4 +41,6 @@ def datuievade():
     """,{'produkcijas_veids':produkcijas_veids,'daudzums_kg':daudzums_kg,'datums_kad_tika_atvesta':datums_kad_tika_atvesta})
 
     db.commit()
-datuievade()
+while sakums:
+    datuievade()
+    

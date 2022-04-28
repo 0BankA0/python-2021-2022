@@ -1,4 +1,6 @@
-vards = input('ievadiet vardu: ')
-uzvards = input('ievadiet uzvardu: ')
-vecums = input('ievadiet vecumu: ')
-tell = input('ievadiet telefona numuru: ')
+try:
+    x = 5
+    y = 2
+    z = x / y
+finally:
+    print(z)
