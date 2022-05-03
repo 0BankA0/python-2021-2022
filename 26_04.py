@@ -12,6 +12,17 @@ def askint():
         val = int(input("Ievadi Skatili: "))
     except:
         print("izskatās, ka tas nav skaitlis")
+    else:
+        print()
     finally:
-        print("Es te vienmer busu")
-askint()
+        print("Es te vienm")
+
+    for i in ['a','b','c']:
+        print(i**2)
+
+try:
+    x = 5
+    y = 2
+    z = x / y
+finally:
+    print(z)
