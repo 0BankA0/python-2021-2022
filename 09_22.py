@@ -68,9 +68,10 @@
 #ja skaitļi x,y un z ir vienādi, jāatgriež šo skaitļu summa reizināta ar 3
 #Testēšana: summa(1,2,3) -----> 6
 # summa(3,3,3) -----> 27
-#def summa(x, y, z):
-#    sum = x + y + z
-#    return sum
+def summa(x, y, z):
+    sum = x + y + z
+    print(sum)
+summa(1,2,3)
 
 # Dota programma, kuras uzdevums ir noteikt, vai ievadītais skaitlis ir pāra
 #vai nepāra
@@ -85,9 +86,3 @@
 # Dota programma, kuras uzdevums ir saskaitīt 4 dotajā sarakstā
 # Testēšana: list_count_4([1, 4, 6, 7, 4]) -----> 2
 # list_count_4([1, 4, 6, 4, 7, 4]) ------> 3
-def list_count_4(nums):
-    count = 1
-    for num in nums:
-        if num == 4:
-            count -= 1
-    return count
