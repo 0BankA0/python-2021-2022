@@ -1,0 +1,15 @@
+.wrapper
+{
+    background-color:  rgb(202, 201, 114);
+}
+
+h1
+{
+    font-style:italic;
+    text-align: center;
+}
+
+li
+{
+    background-color: rgb(255, 255, 255);
+}

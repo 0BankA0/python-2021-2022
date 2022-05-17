@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset= "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link href = "style.css" rel = "stylesheet"/>
+</head>
+
+
+<body>
+    <div class = 'wrapper'>
+        <div class = 'header'>
+            <h1>
+                <a href = 'index.html'>
+                    Atmiņas spele
+                </a>                               
+            </h1>
+        </div>
+        <div class = 'content'>
+            <h3 class = 'noteikumi'>Noteikumu teksts</h3>
+
+            Vards: <input id = 'vards'>
+            <br>
+            Vecums: <input id = 'vecums'>
+            <br>
+            Region: <select id="regions">
+                <option>Vidzeme</option>
+                <option>Latgale</option>
+                <option>Kurzeme</option>
+                <option>Zemgale</option>
+            </select>
+            <button onclick= "saktslepi()">sākt</button>
+        </div>
+    </div>
+</body>
+<script>
+    function saktslepi()
+    {
+        let vards = document.querySelector('#vards') 
+        console.log(vards)
+    }
+</script>
